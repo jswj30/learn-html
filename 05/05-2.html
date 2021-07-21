@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>회원 가입을 환영합니다.</h1>
+  <form>
+    <fieldset>
+      <legend>사용자 정보</legend>
+      <ul>
+        <li>
+          <label for="uid">아이디</label>
+          <input type="text" id="uid">
+        </li>
+        <li>
+          <label for="umail">이메일</label>
+          <input type="email" id="umail">
+        </li>
+        <li>
+          <label for="pwd1">비빌번호</label>
+          <input type="password" id="pwd1">
+        </li>
+        <li>
+          <label for="pwd2">비밀번호 확인</label>
+          <input type="password" id="pwd2">
+        </li>
+      </ul>
+    </fieldset>
+    <fieldset>
+      <legend>이벤트와 새로운 소식</legend>
+      <input type="radio" name="mailing" id="mailing_y">
+      <label for="mailing_y">메일 수신</label>
+      <input type="radio" name="mailing" id="mailing_n" checked>
+      <label for="mailing_n">메일 수신 안 함</label>
+    </fieldset>
+    <div id="buttons">
+      <input type="submit" value="가입하기">
+      <input type="reset" value="취소">
+    </div>
+  </form>
+  <form>
+    <fieldset>
+      <legend>상품 선택</legend>
+      <p><b>주문할 상품을 선택해 주세요.</b></p>
+      <label><input type="checkbox" value="s_3">선물용 3kg</label>
+      <label><input type="checkbox" value="s_5">선물용 5kg</label>
+      <label><input type="checkbox" value="f_3">가정용 3kg</label>
+      <label><input type="checkbox" value="f_5">가정용 5kg</label>
+      <p><b>포장 선택</b></p>
+      <label><input type="radio" name="gift" value="yes">선물 포장</label>
+      <label><input type="radio" name="gift" value="no">선물 포장 안 함</label>
+    </fieldset>
+  </form>
+  <form>
+    <fieldset>
+      <legend>배송정보</legend>
+      <ul>
+        <li>
+          <label for="user-name">이름</label>
+          <input type="text" id="user-name">
+        </li>
+        <li>
+          <label for="addr">배송 주소</label>
+          <input type="text" id="addr">
+        </li>
+        <li>
+          <label for="mail">이메일</label>
+          <input type="email" id="mail">
+        </li>
+        <li>
+          <label for="phone">연락처</label>
+          <input type="tel" id="phone">
+        </li>
+      </ul>
+    </fieldset>
+  </form>
+  <form>
+    <fieldset>
+      <legend>로그인</legend>
+      <label>아이디: <input type="text" id="user_id" size="10"></label>
+      <label>비밀번호: <input type="password" id="user_pw" size="10"></label>
+      <input type="submit" value="로그인">
+    </fieldset>
+  </form>
+  <form>
+    <label>text<input type="text"></label>
+    <br>
+    <label>text<input type="text" size="5"></label>
+    <br>
+    <label>text<input type="text" value="test"></label>
+    <br>
+    <label>text<input type="text" maxlength="3"></label>
+    <br>
+    <label>password<input type="password"></label>
+    <br>
+    <label>search<input type="search"></label>
+    <br>
+    <label>url<input type="url"></label>
+    <br>
+    <label>email<input type="email"></label>
+    <br>
+    <label>tel<input type="tel"></label>
+    <br>
+    <label>checkbox<input type="checkbox"></label>
+    <br>
+    <label>radio<input type="radio"></label>
+    <br>
+    <label>number<input type="number"></label>
+    <br>
+    <label>range<input type="range"></label>
+    <br>
+    <label>date<input type="date"></label>
+    <br>
+    <label>datetime<input type="datetime"></label>
+    <br>
+    <label>datetime-local<input type="datetime-local"></label>
+    <br>
+    <label>submit<input type="submit"></label>
+    <br>
+    <label>reset<input type="reset"></label>
+    <br>
+    <label>image<input type="image"></label>
+    <br>
+    <label>button<input type="button"></label>
+    <br>
+    <label>file<input type="file"></label>
+    <br>
+    <label>hidden<input type="hidden"></label>
+    <br>
+</form>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05-3</title>
+  </head>
+  <body>
+    <form>
+      <h1>회원 가입을 환영합니다</h1>
+      <fieldset>
+        <legend>사용자 정보</legend>
+        <ul>
+          <li>
+            <label for="id">아이디</label>
+            <input type="text" id="id" placeholder="4자 ~ 10자 사이, 공백없이" autofocus required>
+          </li>
+          <li>
+            <label for="email">이메일</label>
+            <input type="email" id="email" required>
+          </li>
+          <li>
+            <label for="pw">비밀번호</label>
+            <input type="password" id="pw" placeholder="문자와 숫자, 특수 기호 포함" required>
+          </li>
+          <li>
+            <label for="pw2">비밀번호 확인</label>
+            <input type="password" id="pw2" required>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>이벤트와 새로운 수신</legend>
+        <input type="radio" name="mailing" id="mailY">
+        <label for="mailY">메일 수신</label>
+        <input type="radio" name="mailing" id="mailN" checked>
+        <label for="mailN">메일 수신 안 함</label>
+      </fieldset>
+      <div>
+        <input type="submit" value="가입하기">
+        <input type="reset" value="취소">
+      </div>
+    </form>
+    <form>
+      <fieldset>
+        <legend>배송 정보</legend>
+        <ul id="shipping">
+          <li>
+            <label for="prod">주문 상품</label>
+            <input type="text" id="prod" value="상품용 3kg" readonly>
+          </li>
+          <li>
+            <label for="user-name">이름</label>
+            <input type="text" id="user-name" autofocus required>
+          </li>
+          <li>
+            <label for="addr">배송 주소</label>
+            <input type="text" id="addr" required>
+          </li>
+          <li>
+            <label for="mail">이메일</label>
+            <input type="email" id="mail">
+          </li>
+          <li>
+            <label for="phone">연락처</label>
+            <input type="tel" id="phone" placeholder="하이픈 빼고 입력해 주세요.(01012345678)" required>
+          </li>
+          <li>
+            <label for="d-day">배송 지정</label>
+            <input type="date" id="d-day">
+            <small>(주문일로부터 최소 3일 이후)</small>
+          </li>
+        </ul>
+      </fieldset>
+      <div>
+        <input type="submit" value="주문하기">
+        <input type="reset" value="취소하기">
+      </div>
+    </form>
+    <input type="text" placeholder="내용을 입력해주세요." required>
+    <input type="text" placeholder="입력안됩니다." value="value" readonly>
+    <form>
+      <fieldset>
+        <legend>로그인</legend>
+        <ul>
+          <li>
+            <label>아이디: <input type="text" autofocus></label>
+          </li>
+          <li>
+            <label>비밀번호: <input type="password"></label>
+          </li>
+        </ul>
+        <div>
+          <input type="button" value="login">
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>

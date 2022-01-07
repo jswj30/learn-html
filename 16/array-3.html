@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array-3</title>
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+    let nums = [1, 2, 3];
+    let chars = ['a', 'b', 'c', 'd'];
+
+    let numsChars = nums.concat(chars);
+    let charsNum = chars.concat(nums);
+    document.write("nums에 chars 합치면: ", numsChars, "<br> chars에 nums 합치면: ", charsNum);
+    </script>
+  </body>
+</html>

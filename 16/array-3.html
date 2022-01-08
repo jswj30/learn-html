@@ -11,6 +11,8 @@
     </style>
   </head>
   <body>
+    <button id="asd" onclick="clickBtn()">1234</button>
+    <input type="text" class="zxcv">
     <script>
     let nums = [1, 2, 3];
     let chars = ['a', 'b', 'c', 'd'];
@@ -39,6 +41,15 @@
     document.write("<br>");
     let popped2 = chars.shift();
     document.write("꺼낸 요소: ", popped2, " | 배열: ", chars);
+
+    let inp = document.querySelector('.zxcv');
+    let btn = document.querySelector('.asd');
+    function clickBtn() {
+      // close();
+      // blur();
+      // inp.focus();
+      btn.focus();
+    }
     </script>
   </body>
 </html>

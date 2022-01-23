@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>연습문제 2</title>
+	<style>
+		#container {
+			margin-bottom: 30px;
+		}
+		input[type="text"] {
+			width: 30px;
+			height: 20px;
+			text-align: center;
+		}
+		button {
+			margin-left: 10px;
+		}
+		table, td {
+			border: 1px solid #222;
+			border-collapse: collapse;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="container">
+		<input type="text" id="inputRow" value="1" />행
+		<input type="text" id="inputCol" value="1" />열
+		<button id="btn" onclick="clickButton(); return false">작성</button>
+	</div>
+	
+	<div id="result"></div>
+
+	<script>
+
+		function clickButton() {
+			let result = document.querySelector('#result');
+
+			if (document.querySelector('table')) {
+				let tab = document.querySelector('table');
+				result.removeChild(tab);
+			}
+
+
+			// 행
+			let rowValue = document.querySelector('#inputRow').value;
+			// 열
+			let colValue = document.querySelector('#inputCol').value;
+			
+			// 테이블 만들기
+			let table = document.createElement('table');
+			for (let i = 0; i < rowValue; i++) {
+				let row = document.createElement('tr');
+				for (let j = 0; j < colValue; j++) {
+					let col = document.createElement('td');
+					let message = document.createTextNode(i + ', ' + j);
+					col.appendChild(message);
+					row.appendChild(col);
+				}
+				table.appendChild(row);
+			}
+
+			result.appendChild(table);
+			// tr 만들기
+			// td 만들기
+			// td를 tr에 넣기
+			// tr을 테이블에 넣기
+		}
+	</script>
+</body>
+</html>

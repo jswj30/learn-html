@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border-radius</title>
+    <style>
+      #round {
+        border-radius: 25px;
+      }
+      #circle {
+        border-radius: 50%;
+      }
+      #round1 {
+        width: 300px;
+        height: 200px;
+        border: 2px solid blue;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+      #round2 {
+        margin-top: 10px;
+        width: 300px;
+        height: 200px;
+        border: 2px solid blue;
+        border-top-left-radius: 60px 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img src="images/cat.jpg" alt="cat">
+      <img id="round" src="images/cat.jpg" alt="cat">
+    </div>
+    <div>
+      <img src="images/photo.jpg" alt="photo">
+      <img id="circle" src="images/photo.jpg" alt="photo">
+    </div>
+    <div id="round1"></div>
+    <div id="round2"></div>
+  </body>
+</html>

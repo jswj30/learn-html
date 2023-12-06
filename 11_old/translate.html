@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Transform:translate</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>translate</title>
     <style>
       #container {
         width: 800px;
         height: 200px;
-        margin: 20px auto;
+        margin: 200px auto;
       }
       .origin {
         width: 100px;
@@ -22,15 +22,13 @@
         height: 100px;
         background-color: orange;
       }
-
       #movex:hover {
         transform: translateX(50px);
       }
-
       #movey:hover {
         transform: translateY(20px);
       }
-      #movexy:hover {
+      #movez:hover {
         transform: translate(10px, 20px);
       }
     </style>
@@ -44,7 +42,7 @@
         <div id="movey"></div>
       </div>
       <div class="origin">
-        <div id="movexy"></div>
+        <div id="movez"></div>
       </div>
     </div>
   </body>

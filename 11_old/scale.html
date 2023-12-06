@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Transform:translate</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scale</title>
     <style>
       #container {
-        width: 800px;
-        height: 200px;
+        width: 600px;
         margin: 20px auto;
       }
       .origin {
@@ -22,29 +21,27 @@
         height: 100px;
         background-color: orange;
       }
-
-      #movex:hover {
-        transform: translateX(50px);
+      #scalex:hover {
+        transform: scaleX(2);
       }
-
-      #movey:hover {
-        transform: translateY(20px);
+      #scaley:hover {
+        transform: scaleY(1.5);
       }
-      #movexy:hover {
-        transform: translate(10px, 20px);
+      #scalez:hover {
+        transform: scale(0.7);
       }
     </style>
   </head>
   <body>
     <div id="container">
       <div class="origin">
-        <div id="movex"></div>
+        <div id="scalex"></div>
       </div>
       <div class="origin">
-        <div id="movey"></div>
+        <div id="scaley"></div>
       </div>
       <div class="origin">
-        <div id="movexy"></div>
+        <div id="scalez"></div>
       </div>
     </div>
   </body>

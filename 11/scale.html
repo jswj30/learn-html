@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>scale</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform:scale</title>
     <style>
       #container {
         width: 600px;
@@ -24,11 +24,12 @@
       #scalex:hover {
         transform: scaleX(2);
       }
+
       #scaley:hover {
         transform: scaleY(1.5);
       }
-      #scalez:hover {
-        transform: scale(0.7);
+      #scale:hover {
+        transform: scale(0.7, 0.4);
       }
     </style>
   </head>
@@ -41,7 +42,7 @@
         <div id="scaley"></div>
       </div>
       <div class="origin">
-        <div id="scalez"></div>
+        <div id="scale"></div>
       </div>
     </div>
   </body>

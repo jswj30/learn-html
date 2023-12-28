@@ -10,6 +10,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 #container {
   /* border: 1px solid #000000; */
   margin: 0 auto;
@@ -42,7 +46,42 @@ nav {
   float: right;
   width: 900px;
   height: 100px;
-  background-color: green;
+  padding-top: 40px;
+}
+
+#topMenu {
+  height: 60px;
+}
+
+#topMenu > li {
+  float: left;
+  position: relative;
+}
+
+#topMenu > li > a {
+  display: block;
+  color: #fff;
+  font-weight: 600;
+  text-shadow: 0 1px #07c;
+  padding: 20px 60px;
+}
+
+#topMenu > li > a > span {
+  font-size: 0.5em;
+}
+
+#topMenu > li > a:hover {
+  color: #000;
+  text-shadow: 0 -1px #07c;
+}
+
+#topMenu > li > ul {
+  display: none;
+  position: absolute;
+  width: 160px;
+  background-color: rgba(255, 255, 255, 0.6);
+  left: 0;
+  margin: 0;
 }
 
 #slideShow {

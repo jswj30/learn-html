@@ -80,8 +80,27 @@ nav {
   position: absolute;
   width: 160px;
   background-color: rgba(255, 255, 255, 0.6);
-  left: 0;
+  left: 20px;
   margin: 0;
+}
+
+#topMenu > li > ul > li {
+  padding: 10px 10px 10px 30px;
+}
+
+#topMenu > li > ul > li > a {
+  font-size: 14px;
+  padding: 10px;
+  color: #000;
+}
+
+#topMenu > li:hover > ul {
+  display: block;
+  z-index: 10;
+}
+
+#topMenu > li > ul > li > a:hover {
+  color: #f00;
 }
 
 #slideShow {
